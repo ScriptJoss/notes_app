@@ -1,14 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/css/style.css">
-    <meta name="description" content="A simple notes application built with ScriptJoss.">
-    <!-- Esta pagina es la parte principal del sitio web -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <meta
+      name="description"
+      content="A simple notes application built with ScriptJoss."
+    />
+    <!-- This page is the main part of the website -->
     <title>Notes App - ScriptJoss</title>
-</head>
-<body>
-    <p>COMO ESTAS</p>
-</body>
+  </head>
+  <body>
+    <header>
+      <div class="container-header">
+        <img src="../static/img/icon.svg" alt="Icon notebook" />
+        <div class="container-header-content">
+          <h1>Welcome back</h1>
+          <p>Capture your thoughts and ideas</p>
+        </div>
+      </div>
+      <div class="container-protip">
+        <img src="../static/img/star.svg" alt="Star from aside of pro tip" />
+        <h4>Pro tip:</h4>
+        <p>Use tags to organize your notes and find them faster</p>
+      </div>
+    </header>
+
+    <!-- Create note -->
+    <main>
+      <div class="main-content">
+        <h2>Create Note</h2>
+        <p>Thu, Jan 22</p>
+      </div>
+      <div class="container-form">
+        <form action="/create_note" method="post">
+          <div class="form-group">
+            <label for="title" class="sr-only">Note title</label>
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="Note title..."
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="content" class="sr-only">Note content</label>
+            <textarea
+              id="content"
+              name="content"
+              rows="8"
+              placeholder="Write your note here..."
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <div class="group-other">
+              <label for="tags" class="sr-only">Note tags</label>
+              <input
+                type="text"
+                id="tags"
+                name="tags"
+                placeholder="Add tag..."
+              />
+                <div class="group-other-container-buttons">
+                  <a href="/view_notes" class="btn button-view">
+                    <img src="../static/img/list.svg" alt="List icon" /> View
+                    Notes
+                  </a>
+                  <button type="submit" class="btn">
+                    <img src="../static/img/plus.svg" alt="Plus icon" /> Create
+                    Note
+                  </button>
+                </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <p>
+        &copy; 2026
+        <a href="https://github.com/ScriptJoss" target="_blank">ScriptJoss</a>.
+        All rights reserved.
+      </p>
+    </footer>
+  </body>
 </html>

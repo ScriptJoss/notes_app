@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Note</title>
+    <link rel="stylesheet" href="./../static/css/view_note.css" />
+    <meta
+      name="description"
+      content="A simple notes application built with ScriptJoss."
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container-header">
+        <img src="../static/img/icon.svg" alt="Icon notebook" />
+        <div class="container-header-content">
+          <h1>View your notes</h1>
+          <p>Capture your thoughts and ideas</p>
+        </div>
+      </div>
+    </header>
+    <!-- View Notes -->
+    <main>
+      <div class="container-view-note">
+        <div class="note-card">
+          <h2 class="note-title">{{ notes.title }}</h2>
+          <p class="note-id">{{ notes.id }}</p>
+          <p class="note-content">{{ notes.content }}</p>
+        </div>
+      </div>
+      <a href="/" class="back-link">← Back to Notes</a>
+    </main>
+  </body>
+</html>
