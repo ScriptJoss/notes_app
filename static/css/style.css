@@ -198,7 +198,11 @@ main h2 {
     outline-offset: 2px;
 }
 
-
+.btn:hover,
+.button-view:hover{
+    background-color: #35abbd;
+    box-shadow: 0px 0px 25px 7px rgba(18, 113, 127, 0.3);
+}
 
 .button-view{
     display: flex;

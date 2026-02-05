@@ -22,14 +22,58 @@
     </header>
     <!-- View Notes -->
     <main>
-      <div class="container-view-note">
-        <div class="note-card">
-          <h2 class="note-title">{{ notes.title }}</h2>
-          <p class="note-id">{{ notes.id }}</p>
-          <p class="note-content">{{ notes.content }}</p>
+      <div class="container-note">
+        <div class="container-view-note">
+          <div class="note-card">
+            <h2 class="note-title">{{ title }}</h2>
+            <p class="note-id">{{ id }}</p>
+            <p class="note-content">{{ content }}</p>
+          </div>
+        </div>
+        <div class="container-view-note">
+          <div class="note-card">
+            <h2 class="note-title">{{ title }}</h2>
+            <p class="note-id">{{ id }}</p>
+            <p class="note-content">{{ content }}</p>
+          </div>
+        </div>
+        <div class="container-view-note">
+          <div class="note-card">
+            <h2 class="note-title">{{ title }}</h2>
+            <p class="note-id">{{ id }}</p>
+            <p class="note-content">{{ content }}</p>
+          </div>
+        </div>
+        <div class="container-view-note">
+          <div class="note-card">
+            <h2 class="note-title">{{ title }}</h2>
+            <p class="note-id">{{ id }}</p>
+            <p class="note-content">{{ content }}</p>
+          </div>
+        </div>
+        <div class="container-view-note">
+          <div class="note-card">
+            <h2 class="note-title">{{ title }}</h2>
+            <p class="note-id">{{ id }}</p>
+            <p class="note-content">{{ content }}</p>
+          </div>
+        </div>
+        <div class="container-view-note">
+          <div class="note-card">
+            <h2 class="note-title">{{ title }}</h2>
+            <p class="note-id">{{ id }}</p>
+            <p class="note-content">{{ content }}</p>
+          </div>
+        </div>
+        <div class="container-view-note">
+          <div class="note-card">
+            <h2 class="note-title">{{ title }}</h2>
+            <p class="note-id">{{ id }}</p>
+            <p class="note-content">{{ content }}</p>
+          </div>
         </div>
       </div>
-      <a href="/" class="back-link">← Back to Notes</a>
+      <a href="{{ url_for('index')}}" class="back-link">← Back to Notes</a>
     </main>
   </body>
 </html>
